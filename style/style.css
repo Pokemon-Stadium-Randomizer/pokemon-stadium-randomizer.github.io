@@ -1,0 +1,52 @@
+body{
+	background: #181818 !important;
+	color: #eff0f1 !important;
+}
+
+a {
+	color: #00adee !important;
+}
+
+#title {
+	padding-bottom: 2em;
+	text-align:center;
+	font-size: 2em;
+}
+
+#controls {
+	text-align:center;
+	padding-bottom: 2.2em;	
+}
+
+#controls button {
+	margin-top: 1em;
+}
+
+#team_table {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#team_table td {
+	width: 128px;
+	height: 128px;
+	text-align: center;
+}
+
+#team_table td:hover {
+	background: inherit !important;
+}
+
+#team_info {
+	text-align:center;
+	padding-top: 2em;
+}
+
+#footer {
+	text-align:center;
+	padding-top: 1em;
+}
+
+#footer-links-primary a, #footer a {
+	color: #00adee !important;
+}

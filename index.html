@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="js/logic.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			getNewTeam();
+		});
+		$(this).keypress(function (e) {
+			if(e.which == '13'){
+				getNewTeam();
+			}
+		});
+	</script>
+  </head>
+    <body>
+		<div>
+			<div id="title">Random Pokémon Team Generator<br/>for Pokémon Stadium</div>
+			<div id="controls">
+				<input type="checkbox" id="use_delay" title='Spin like a slot machine' checked></input>
+				<label for="use_delay" title="Spin like a slot machine">Slot Mode</label><br/>
+				<input type="checkbox" id="allow_wildcard" title="A wildcard has a chance to show in your party, choose your own Pokémon for this slot"></input>
+				<label for="allow_wildcard" title="A wildcard has a chance to show in your party, choose your own Pokémon for this slot">Allow Wildcard</label> 
+				<input type="checkbox" id="force_karp" title="Punish yourself"></input>
+				<label for="force_karp" title="Punish yourself">Force a Magikarp</label> 
+				<br/>
+				<button onclick="getNewTeam()">Generate Team</button>
+			</div>
+			<table id="team_table">
+				<tr>
+					<td id="party_1">
+						Bulbasaur<br/>
+						<img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/bulbasaur.png">
+					</td>
+					<td id="party_2">
+						Squirtle<br/>
+						<img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/squirtle.png">
+					</td>
+					<td id="party_3">
+						Eevee<br/>
+						<img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/eevee.png">
+					</td>
+				</tr>
+				<tr>
+					<td id="party_4">Scyther<br/>
+						<img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/scyther.png">
+					</td>
+					<td id="party_5">Pikachu<br/>
+						<img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pikachu.png">
+					</td>
+					<td id="party_6">Poliwrath<br/>
+						<img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/poliwrath.png">
+					</td>
+				</tr>
+			</table>
+			<div id="team_info">You have generated 0 teams.</div>
+			<div id="footer">
+				<a href="https://pokemondb.net">Sprites courtesy of PokémonDB</a>
+			</div>
+    </div>
+  </body>
+</html>
+
