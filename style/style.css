@@ -28,6 +28,7 @@ a {
 }
 
 #team_table td {
+	font-size: 1.1em;
 	width: 128px;
 	height: 128px;
 	text-align: center;
@@ -49,4 +50,10 @@ a {
 
 #footer-links-primary a, #footer a {
 	color: #00adee !important;
+}
+
+#footer .blurb {
+	display: block;
+	margin-left: 15em;
+	margin-right: 15em;
 }
