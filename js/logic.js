@@ -142,16 +142,8 @@ function outputStadium2Team(team){
 			console.log("Replaced " + team[i] + " with wildcard");
 			teamElements[i] = 'Wildcard!<br/><img style="width:64px;height:64px" src="https://img.pokemondb.net/sprites/home/normal/unown-qm.png" alt="Wildcard!"/>';
 		}
-		else if(team[i] == 251){
-			console.log('celery');
-		}
 		else{
-			try{
-				teamElements[i] = pokemonNames[team[i] - 1] + '<br/><img src="' + baseSpriteURL + pokemonNames[team[i] - 1].toLowerCase() + '.png" alt="' + pokemonNames[team[i] - 1] + '"/>'; 
-			}
-			catch{
-				console.log(team[i]);
-			}
+			teamElements[i] = pokemonNames[team[i] - 1] + '<br/><img src="' + baseSpriteURL + pokemonNames[team[i] - 1].toLowerCase() + '.png" alt="' + pokemonNames[team[i] - 1] + '"/>'; 
 		}
 		
 		$('#party_' + (i + 1)).html(teamElements[i]);
